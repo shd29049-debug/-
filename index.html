@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صانع البهجة | بإدارة عبد السلام</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#090909;color:#fff;font-family:Cairo,sans-serif}
+header{background:#111;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b8944b;position:sticky;top:0;z-index:5}
+.logo{font-size:23px;font-weight:800;color:#d7b56d}
+.logo small{display:block;font-size:11px;color:#aaa}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#eee;text-decoration:none;font-size:13px}
+nav a:hover{color:#d7b56d}
+.hero{text-align:center;padding:100px 20px;background:radial-gradient(circle,#493819 0%,#090909 65%)}
+.hero h1{font-size:clamp(36px,7vw,65px);margin:0;color:#d7b56d}
+.hero p{color:#ccc;max-width:650px;margin:20px auto}
+.btn{display:inline-block;padding:12px 25px;background:#d7b56d;color:#111;text-decoration:none;border-radius:5px;font-weight:bold;margin:8px}
+section{padding:65px 6%}
+h2{text-align:center;color:#d7b56d;font-size:30px}
+.desc{text-align:center;color:#aaa;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#171717;border:1px solid #604c28;border-radius:9px;overflow:hidden}
+.card img,.card video{width:100%;height:230px;object-fit:cover;display:block;background:#222}
+.card h3,.card p{padding:0 14px}
+.card h3{color:#e2c27b}
+.card p{color:#aaa;font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:8px;border:1px solid #806333}
+.video{background:#171717;padding:10px;border:1px solid #604c28;border-radius:8px}
+.video video{width:100%;border-radius:5px}
+.contact{text-align:center;background:#17140e}
+footer{text-align:center;padding:25px;color:#aaa;background:#050505}
+.whatsapp{position:fixed;bottom:18px;left:18px;background:#20b765;color:white;padding:13px 18px;border-radius:30px;text-decoration:none;z-index:9}
+@media(max-width:650px){
+ header{align-items:flex-start;flex-direction:column;gap:10px}
+ nav{gap:12px}
+ .hero{padding:75px 15px}
+ section{padding:50px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">✦ صانع البهجة<small>بإدارة عبد السلام</small></div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#services">خدماتنا</a>
+<a href="#kosh">الكوش والأفراح</a>
+<a href="#perfumes">البرفانات</a>
+<a href="#gifts">الهدايا</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>صانع البهجة</h1>
+<p>نصنع لحظات تفضل في الذاكرة. تجهيز كوش وأفراح ومناسبات، وهدايا وبوكسات وإكسسوارات وبرفانات.</p>
+<a class="btn" href="#kosh">شاهد أعمالنا</a>
+<a class="btn" href="https://wa.me/201013918098">تواصل واتساب</a>
+</div>
+
+<section id="services">
+<h2>خدماتنا</h2>
+<p class="desc">كل اللي تحتاجه علشان مناسبتك تبقى مميزة</p>
+<div class="cards">
+<div class="card"><h3>الكوش والأفراح</h3><p>تجهيز كوش وأفراح ومناسبات.</p></div>
+<div class="card"><h3>البرفانات</h3><p>مجموعة من أسماء العطور المعروفة.</p></div>
+<div class="card"><h3>الهدايا والبوكسات</h3><p>هدايا وتنسيقات للمناسبات المختلفة.</p></div>
+<div class="card"><h3>الإكسسوارات</h3><p>اختيارات تضيف لمستك الخاصة.</p></div>
+</div>
+</section>
+
+<section id="kosh">
+<h2>الكوش وتجهيز الأفراح</h2>
+<p class="desc">نماذج من أعمال صانع البهجة</p>
+<div class="gallery" id="gallery"></div>
+<h2 style="margin-top:50px">فيديوهات من أعمالنا</h2>
+<div class="cards" id="videos"></div>
+</section>
+
+<section id="perfumes">
+<h2>ركن البرفانات</h2>
+<p class="desc">أسماء عطور معروفة — الصور توضيحية وليست تأكيدًا لتوافر المنتجات بالمحل.</p>
+<div class="cards" id="perfumeCards"></div>
+</section>
+
+<section id="gifts">
+<h2>الهدايا والبوكسات</h2>
+<p class="desc">خلي مناسبتك أحلى بهدية متنساش.</p>
+<div class="cards">
+<div class="card"><div style="font-size:75px;text-align:center;padding:25px">🎁</div><h3>بوكسات الهدايا</h3><p>تجهيز وتنسيق هدايا للمناسبات واللحظات الخاصة.</p></div>
+<div class="card"><div style="font-size:75px;text-align:center;padding:25px">💝</div><h3>هدايا مميزة</h3><p>أفكار هدايا متنوعة تناسب ذوقك ومناسبتك.</p></div>
+</div>
+</section>
+
+<section id="accessories">
+<h2>الإكسسوارات</h2>
+<p class="desc">تفاصيل صغيرة بتفرق في أناقتك.</p>
+<div style="text-align:center;color:#ccc">للاستفسار عن المتاح، تواصل معنا على واتساب.</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>يسعدنا تواصلكم</h2>
+<p>للحجز والاستفسار عن خدمات صانع البهجة</p>
+<a class="btn" href="https://wa.me/201013918098">راسلنا على واتساب</a>
+<p dir="ltr">+20 10 1391 8098</p>
+</section>
+
+<footer>© صانع البهجة — بإدارة عبد السلام</footer>
+<a class="whatsapp" href="https://wa.me/201013918098">واتساب ☎</a>
+
+<script>
+const images=[
+"https://files.catbox.moe/iif9e4.jpg",
+"https://files.catbox.moe/0r6ck7.jpeg",
+"https://files.catbox.moe/wnrpaq.jpg",
+"https://files.catbox.moe/akfv0c.jpeg",
+"https://files.catbox.moe/mw4ths.jpg",
+"https://files.catbox.moe/meg0ap.jpg",
+"https://files.catbox.moe/4elbsr.jpg",
+"https://files.catbox.moe/6zodvc.jpg",
+"https://files.catbox.moe/mr6zej.jpg",
+"https://files.catbox.moe/uehjar.jpg",
+"https://files.catbox.moe/2ln6tx.jpg"
+];
+
+const videos=[
+"https://files.catbox.moe/299tqc.mp4",
+"https://files.catbox.moe/k8f48u.mp4",
+"https://files.catbox.moe/ezhu7z.mp4"
+];
+
+const perfumes=[
+["Dior Sauvage","https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700"],
+["Bleu de Chanel","https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700"],
+["Yves Saint Laurent Y","https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700"],
+["Versace Eros","https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700"],
+["1 Million","https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700"],
+["Baccarat Rouge 540","https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700"]
+];
+
+document.getElementById("gallery").innerHTML=images.map((src,i)=>
+`<img src="${src}" loading="lazy" alt="تجهيز كوش وأفراح ${i+1}">`).join("");
+
+document.getElementById("videos").innerHTML=videos.map(src=>
+`<div class="video"><video controls playsinline preload="metadata"><source src="${src}" type="video/mp4"></video></div>`).join("");
+
+document.getElementById("perfumeCards").innerHTML=perfumes.map(p=>
+`<div class="card"><img src="${p[1]}" loading="lazy" alt="${p[0]} - صورة توضيحية"><h3>${p[0]}</h3><p>صورة توضيحية للعطر</p></div>`).join("");
+</script>
+</body>
+</html>
